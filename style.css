@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-body{
+body {
     background-color: antiquewhite;
 }
-*{
+* {
     margin: 0;
     padding: 0;
 }
-nav{
-    font-family: 'ubuntu', sans-serif;
+nav {
+    font-family: 'Ubuntu', sans-serif;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -20,27 +20,26 @@ nav ul{
     color: white;
 }
 
-nav ul li{
+nav ul li {
     padding: 0 12px;
 }
-.brand img{
+.brand img {
     width: 44px;
     padding: 0 8px;
 }
 
-.brand{
+.brand {
     display: flex;
     align-items: center;
     font-weight: bold;
     font-size: 1.3rem;
-
 }
 
-.container{
+.container {
     min-height: 72vh;
     background-color: black;
     color: white;
-    font-family: 'ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
     width: 70%;
     margin: 23px auto;
@@ -48,8 +47,10 @@ nav ul li{
     padding: 34px;
     background-image: url(bg.jpg);
     background-size: cover;
+    flex-direction: column;
 }
-.bottom{
+
+.bottom {
     position: sticky;
     height: 130px;
     background-color: black;
@@ -60,21 +61,21 @@ nav ul li{
     align-items: center;
     flex-direction: column;
 }
-.icons{
+.icons {
     margin-top: 14px;
 }
-.icons i{
+.icons i {
     cursor: pointer;
 }
 
-#myProgressBar{
+#myProgressBar {
     width: 80vw;
     cursor: pointer;
 }
-.songItemcontainer{
+.songItemcontainer {
     margin-top: 75px;
 }
-.songItem{
+.songItem {
     height: 50px;
     display: flex;
     color: white;
@@ -83,26 +84,82 @@ nav ul li{
     align-items: center;
     border-radius: 34PX;
 }
-.songItem img{
+.songItem img {
     width: 40px;
     margin: 0 4px;
     border-radius: 34px;
-    
 }
-.timestamp{
+.timestamp {
     margin: 0 23px;
 }
-.timestamp i{
+.timestamp i {
     cursor: pointer;
 }
-.songInfo{
+.songInfo {
     position: absolute;
     left: 9.8vw;
-    font-family: 'ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.songInfo img{
+.songInfo img {
     opacity: 0;
     transition: opacity 0.3s ease-in;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .songItemcontainer {
+        margin-top: 50px;
+    }
+    
+    .songItem {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    
+    .songItem img {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .timestamp {
+        margin: 10px 0;
+    }
+    
+    .bottom {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    #myProgressBar {
+        width: 90vw;
+    }
+    
+    .icons {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .songInfo {
+        position: relative;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
