@@ -21,6 +21,11 @@ let songs = [
     {songName: "Tujhe_Bhula_Diya_Full_Song", filepath: "songs/9.mp3", coverPath: "covers/9.jpg"},
     {songName: "Tu_Hi_Hai_Aashiqui_by_Arijit_Singh", filepath: "songs/10.mp3", coverPath: "covers/10.jpg"},
     {songName: "Tum_Se_Hi", filepath: "songs/11.mp3", coverPath: "covers/11.jpg"},
+    {songName: "Aankhen_khuli_ho_ya_ho_band", filepath: "songs/12.mp3", coverPath: "covers/12.jpg"},
+    {songName: "Naina", filepath: "songs/13.mp3", coverPath: "covers/15.jpg"},
+    {songName: "Tu_Pyar_Hai_Kisi_Aur_Ka", filepath: "songs/14.mp3", coverPath: "covers/14.jpg"},
+    {songName: "Zara_Zara", filepath: "songs/15.mp3", coverPath: "covers/13.jpg"},
+    
 ]
 // audioElement.play();
 
